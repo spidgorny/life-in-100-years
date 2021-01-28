@@ -1,0 +1,13 @@
+{
+  "name": "life-in-100-years",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/spidgorny/life-in-100-years",
+  "author": "depidsvy <spidgorny@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "npm install -g marked",
+    "generate": "marked life-in-hundred-years.md | fold -s > combined.html",
+    "make": "cat template/before.html combined.html template/after.html > readme.html"
+  }
+}
