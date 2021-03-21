@@ -11,3 +11,5 @@ Everything that is made by humans has been imagined in the mind. Every bridge wa
 Humans are capable to think of something and then make conscious or unconscious step toward realisation of their idea. This way, it’s important to be aware of your thoughts, as some of them will influence what you will be doing.
 
 Any way, I tried to imagine the future in 100 years. I’ve taken some of the novel ideas of 2020 decade and extrapolated them further. I am curious how the world would look like if these ideas become the mainstream and then daily reality. Let’s explore year 2120 together.
+
+<!-- toc -->

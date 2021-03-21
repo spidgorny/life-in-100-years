@@ -11,6 +11,29 @@ Everything that is made by humans has been imagined in the mind. Every bridge wa
 Humans are capable to think of something and then make conscious or unconscious step toward realisation of their idea. This way, it’s important to be aware of your thoughts, as some of them will influence what you will be doing.
 
 Any way, I tried to imagine the future in 100 years. I’ve taken some of the novel ideas of 2020 decade and extrapolated them further. I am curious how the world would look like if these ideas become the mainstream and then daily reality. Let’s explore year 2120 together.
+
+<!-- toc -->
+
+- [Energy](#energy)
+- [Money](#money)
+- [Countries](#countries)
+- [Human relations](#human-relations)
+- [Work from home](#work-from-home)
+- [Transportation](#transportation)
+- [Travel](#travel)
+- [Laws](#laws)
+- [Surveillance](#surveillance)
+- [Education](#education)
+- [Automation](#automation)
+- [Languages](#languages)
+- [Cities](#cities)
+- [Food production](#food-production)
+- [Library of things](#library-of-things)
+- [Health](#health)
+- [P.S.](#ps)
+
+<!-- tocstop -->
+
 ## Energy
 
 We can characterise the human impact by the amount of energy available to the civilisation or individuals. For millions of years the only power humans had was in their muscles (legs and arms). It was much more important than today to be fit, be able to jump, run and hit.
@@ -129,7 +152,7 @@ It becomes mind-boggling to fertilise the soil that is not under your control. R
 Most of the things I own are only used 1% of the time or less. I need to have a hammer, soldering iron, high-pressure washing device, camping gear, snowboarding gear, swimming gear, inline skates, a barbecue grill and a whole host of things for when I have visitors coming and so on. And my neighbour has a similar bunch of things he needs only occasionally. Not to mention the car - which is only driving
 
 I guess it would be better that we share.
-# Health
+## Health
 
 Even today in 2020, many people wear smartwatches that collect health data like steps and distance walked, sleep quality, pulse, blood saturation, etc. This data is visible in the app. And there are multiple apps that store data in different ways. The project like [Google Health](https://health.google/) is supposedly able to collect data from multiple providers, but not all smartwatch manufactures support it.
 

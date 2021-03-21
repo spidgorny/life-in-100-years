@@ -1,4 +1,4 @@
-# Health
+## Health
 
 Even today in 2020, many people wear smartwatches that collect health data like steps and distance walked, sleep quality, pulse, blood saturation, etc. This data is visible in the app. And there are multiple apps that store data in different ways. The project like [Google Health](https://health.google/) is supposedly able to collect data from multiple providers, but not all smartwatch manufactures support it.
 
