@@ -8,6 +8,6 @@
   "scripts": {
     "install": "npm install -g marked",
     "make:readme": "cat src/*.md > readme.md",
-    "make:html": "cat template/before.html && cat src/*.md | marked | fold -s && cat template/after.html > index.html"
+    "make:html": "(cat template/before.html && (cat src/*.md | marked | fold -s) && cat template/after.html) > index.html"
   }
 }
