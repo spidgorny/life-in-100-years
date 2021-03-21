@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "install": "npm install -g marked",
-    "generate": "marked life-in-hundred-years.md | fold -s > combined.html",
-    "make": "cat template/before.html combined.html template/after.html > readme.html"
+    "make:readme": "cat src/*.md > readme.md",
+    "make:html": "cat template/before.html && cat src/*.md | marked | fold -s && cat template/after.html > index.html"
   }
 }
