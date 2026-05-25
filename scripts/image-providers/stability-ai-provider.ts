@@ -1,3 +1,8 @@
+import {
+	formatFetchFailure,
+	logApiRequest,
+	logApiResponse,
+} from './api-debug.js';
 import type { ImageProvider } from './image-provider.js';
 
 interface StabilityAiProviderOptions {
@@ -35,22 +40,53 @@ export class StabilityAiProvider implements ImageProvider {
 			throw new Error('Missing Stability AI API key. Set STABILITY_API_KEY.');
 		}
 
-		const response = await fetch(this.endpoint, {
+		const formData = new FormData();
+		formData.set('prompt', prompt);
+		formData.set('aspect_ratio', '16:9');
+		formData.set('output_format', this.outputFormat);
+		const headers = {
+			Authorization: `Bearer ${this.apiKey}`,
+			Accept: 'image/*, application/json',
+		};
+
+		await logApiRequest({
+			provider: this.name,
+			label: 'generate image',
+			url: this.endpoint,
 			method: 'POST',
-			headers: {
-				Authorization: `Bearer ${this.apiKey}`,
-				'Content-Type': 'application/json',
-				Accept: 'image/*, application/json',
-			},
-			body: JSON.stringify({
-				prompt,
-				aspect_ratio: '16:9',
-				output_format: this.outputFormat,
-			}),
+			headers,
+			body: formData,
 		});
+
+		let response: Response;
+
+		try {
+			response = await fetch(this.endpoint, {
+				method: 'POST',
+				headers,
+				body: formData,
+			});
+		} catch (error) {
+			throw new Error(
+				formatFetchFailure({
+					provider: this.name,
+					label: 'generate image',
+					url: this.endpoint,
+					error,
+				})
+			);
+		}
 
 		if (!response.ok) {
 			const errorBody = await response.text();
+			await logApiResponse({
+				provider: this.name,
+				label: 'generate image',
+				url: this.endpoint,
+				status: response.status,
+				statusText: response.statusText,
+				body: errorBody,
+			});
 			throw new Error(`Stability AI request failed (${response.status}): ${errorBody}`);
 		}
 

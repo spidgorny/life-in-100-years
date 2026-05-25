@@ -1,3 +1,8 @@
+import {
+	formatFetchFailure,
+	logApiRequest,
+	logApiResponse,
+} from './api-debug.js';
 import type { ImageProvider } from './image-provider.js';
 
 interface GoogleImagenProviderOptions {
@@ -63,20 +68,45 @@ export class GoogleImagenProvider implements ImageProvider {
 				parameters.personGeneration = this.personGeneration;
 			}
 
-			return fetch(
-				`https://generativelanguage.googleapis.com/v1beta/models/${this.model}:predict`,
-				{
+			const url = `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:predict`;
+			const headers = {
+				'Content-Type': 'application/json',
+				'x-goog-api-key': apiKey,
+			};
+			const body = JSON.stringify({
+				instances: [{ prompt }],
+				parameters,
+			});
+
+			await logApiRequest({
+				provider: this.name,
+				label: includePersonGeneration
+					? 'generate image'
+					: 'generate image retry without personGeneration',
+				url,
+				method: 'POST',
+				headers,
+				body,
+			});
+
+			try {
+				return await fetch(url, {
 					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-						'x-goog-api-key': apiKey,
-					},
-					body: JSON.stringify({
-						instances: [{ prompt }],
-						parameters,
-					}),
-				}
-			);
+					headers,
+					body,
+				});
+			} catch (error) {
+				throw new Error(
+					formatFetchFailure({
+						provider: this.name,
+						label: includePersonGeneration
+							? 'generate image'
+							: 'generate image retry without personGeneration',
+						url,
+						error,
+					})
+				);
+			}
 		};
 
 		let response = await requestImage(true);
@@ -89,14 +119,38 @@ export class GoogleImagenProvider implements ImageProvider {
 				errorBody.includes('personGeneration') &&
 				errorBody.includes('not supported')
 			) {
+				await logApiResponse({
+					provider: this.name,
+					label: 'generate image',
+					url: `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:predict`,
+					status: response.status,
+					statusText: response.statusText,
+					body: errorBody,
+				});
 				response = await requestImage(false);
 			} else {
+				await logApiResponse({
+					provider: this.name,
+					label: 'generate image',
+					url: `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:predict`,
+					status: response.status,
+					statusText: response.statusText,
+					body: errorBody,
+				});
 				throw new Error(this.formatError(response.status, errorBody));
 			}
 		}
 
 		if (!response.ok) {
 			const errorBody = await response.text();
+			await logApiResponse({
+				provider: this.name,
+				label: 'generate image',
+				url: `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:predict`,
+				status: response.status,
+				statusText: response.statusText,
+				body: errorBody,
+			});
 			throw new Error(this.formatError(response.status, errorBody));
 		}
 

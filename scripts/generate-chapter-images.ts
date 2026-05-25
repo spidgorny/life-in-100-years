@@ -3,20 +3,19 @@
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import * as path from 'node:path';
+import { ComfyUiProvider } from './image-providers/comfyui-provider.js';
 import { GoogleImagenProvider } from './image-providers/google-imagen-provider.js';
 import type { ImageProvider } from './image-providers/image-provider.js';
 import { StabilityAiProvider } from './image-providers/stability-ai-provider.js';
-
-interface Chapter {
-	title: string;
-	summary: string;
-}
+import { LmStudioBriefGenerator } from './visual-briefs/lm-studio-brief-generator.js';
+import type { ChapterContext, VisualBrief } from './visual-briefs/visual-brief.js';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(scriptDir, '..');
 const srcDir = path.join(rootDir, 'src');
 const defaultOutputDir = path.join(rootDir, 'images', 'chapters');
-const imageProviderName = (process.env.IMAGE_PROVIDER || 'stability').toLowerCase();
+const imageProviderName = (process.env.IMAGE_PROVIDER || 'comfyui').toLowerCase();
+const visualBriefProvider = (process.env.VISUAL_BRIEF_PROVIDER || 'basic').toLowerCase();
 
 const stylePrompt = [
 	'Create a cinematic wide chapter banner for a nonfiction futurist book.',
@@ -29,6 +28,7 @@ const stylePrompt = [
 const args = new Set(process.argv.slice(2));
 const dryRun = args.has('--dry-run');
 const force = args.has('--force');
+const debugPrompt = args.has('--debug-prompt');
 
 for (const stream of [process.stdout, process.stderr]) {
 	stream.on('error', (error: NodeJS.ErrnoException) => {
@@ -53,7 +53,7 @@ function stripMarkdown(text: string): string {
 function getSummarySentences(text: string): string {
 	const normalized = stripMarkdown(text);
 	const sentences = normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [];
-	return sentences.slice(0, 2).join(' ').trim() || normalized;
+	return sentences.slice(0, 3).join(' ').trim() || normalized;
 }
 
 function truncateAtWord(text: string, maxLength: number): string {
@@ -71,7 +71,194 @@ function truncateAtWord(text: string, maxLength: number): string {
 	return `${shortened.slice(0, lastSpace).trimEnd()}…`;
 }
 
-function parseChapter(markdown: string): Chapter {
+function extractKeywords(title: string, text: string, limit: number): string[] {
+	const stopWords = new Set([
+		'the',
+		'and',
+		'that',
+		'with',
+		'this',
+		'from',
+		'they',
+		'their',
+		'there',
+		'about',
+		'into',
+		'would',
+		'could',
+		'should',
+		'while',
+		'where',
+		'which',
+		'when',
+		'what',
+		'will',
+		'have',
+		'has',
+		'had',
+		'more',
+		'most',
+		'than',
+		'then',
+		'being',
+		'people',
+		'person',
+		'future',
+		'world',
+		'life',
+		'chapter',
+		'into',
+		'through',
+		'those',
+		'these',
+		'today',
+		'2120',
+		'year',
+		'years',
+		'many',
+		'might',
+		'still',
+		'become',
+		'becomes',
+		'because',
+		'everyday',
+		'ordinary',
+		'humans',
+		'human',
+		'society',
+		'systems',
+		'system',
+		'less',
+		'like',
+		'longer',
+		'shorter',
+		'daily',
+		'common',
+		'often',
+		'just',
+		'very',
+		'make',
+		'makes',
+		'made',
+		'using',
+		'used',
+		'use',
+		'also',
+		'such',
+		'other',
+		'another',
+		'every',
+		'each',
+		'between',
+		'around',
+		'across',
+		'under',
+		'over',
+		'toward',
+		'without',
+		'within',
+		'becomes',
+		'became',
+		'become',
+		'whole',
+		'large',
+		'small',
+		'better',
+		'best',
+		'good',
+		'great',
+		'clear',
+		'simple',
+		'first',
+		'second',
+		'third',
+		'however',
+		'therefore',
+		'rather',
+		'together',
+		'local',
+		'global',
+		'modern',
+		'old',
+		'new',
+		'work',
+		'life',
+	]);
+
+	const counts = new Map<string, number>();
+	const words = stripMarkdown(text)
+		.toLowerCase()
+		.match(/[a-z][a-z'-]{3,}/g);
+
+	for (const word of words || []) {
+		if (stopWords.has(word)) {
+			continue;
+		}
+
+		counts.set(word, (counts.get(word) || 0) + 1);
+	}
+
+	const titleWords = stripMarkdown(title)
+		.toLowerCase()
+		.match(/[a-z][a-z'-]{3,}/g);
+
+	for (const word of titleWords || []) {
+		if (stopWords.has(word)) {
+			continue;
+		}
+
+		counts.set(word, (counts.get(word) || 0) + 4);
+	}
+
+	return [...counts.entries()]
+		.sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+		.slice(0, limit)
+		.map(([word]) => word);
+}
+
+function inferMood(title: string, fullText: string): string {
+	const sample = `${title} ${fullText}`.toLowerCase();
+
+	if (/(crime|conflict|surveillance|laws|governance)/.test(sample)) {
+		return 'thoughtful, tense, intelligent';
+	}
+
+	if (/(family|children|health|relations|education)/.test(sample)) {
+		return 'warm, humane, hopeful';
+	}
+
+	if (/(climate|energy|food|cities|housing)/.test(sample)) {
+		return 'optimistic, grounded, restorative';
+	}
+
+	return 'hopeful, grounded, thoughtful';
+}
+
+function buildDeterministicVisualBrief(chapter: ChapterContext): VisualBrief {
+	const keywords = extractKeywords(chapter.title, chapter.fullText, 6);
+	const keyElements =
+		keywords.length > 0
+			? keywords.map((keyword) => keyword.replace(/-/g, ' '))
+			: ['future resident', 'human-scale setting', 'clear focal subject'];
+	const mood = inferMood(chapter.title, chapter.fullText);
+
+	return {
+		title: chapter.title,
+		summary: chapter.summary,
+		theme: `${chapter.title} in a humane, post-scarcity future`,
+		visualScene: [
+			`A concrete human-centered scene that expresses "${chapter.title}" in the year 2120.`,
+			`Use the chapter ideas to show a specific place, activity, or interaction rather than a broad skyline or empty landscape.`,
+			`Ground the scene in these ideas: ${truncateAtWord(chapter.summary, 220)}`,
+		].join(' '),
+		keyElements,
+		mood,
+		negativePrompt:
+			'generic landscape, empty skyline, abstract wallpaper, text overlay, book cover, infographic, diagram, logo, UI, unrelated fantasy imagery',
+	};
+}
+
+function parseChapter(markdown: string): ChapterContext {
 	const lines = markdown.replace(/\r\n/g, '\n').split('\n');
 	const headingLine = lines.find((line) => /^#{1,2}\s+/.test(line));
 
@@ -118,23 +305,64 @@ function parseChapter(markdown: string): Chapter {
 		blocks.push(currentBlock.join(' ').trim());
 	}
 
-	const summaryBlock = blocks.find((block) => !block.startsWith('>')) || blocks[0] || title;
-	const summary = truncateAtWord(getSummarySentences(summaryBlock), 280);
+	const proseBlocks = blocks.filter((block) => !block.startsWith('>'));
+	const summarySource = proseBlocks.slice(0, 3).join(' ');
+	const summary = truncateAtWord(getSummarySentences(summarySource || title), 420);
+	const fullText = truncateAtWord(proseBlocks.join('\n\n') || title, 8000);
 
-	return { title, summary };
+	return {
+		title,
+		summary,
+		fullText,
+		paragraphs: proseBlocks,
+	};
 }
 
-function buildPrompt({ title, summary }: Chapter): string {
+async function createVisualBrief(chapter: ChapterContext): Promise<VisualBrief> {
+	const fallback = buildDeterministicVisualBrief(chapter);
+
+	if (visualBriefProvider === 'basic') {
+		return fallback;
+	}
+
+	if (visualBriefProvider === 'lmstudio') {
+		try {
+			const generator = new LmStudioBriefGenerator();
+			return await generator.generate(chapter, fallback);
+		} catch (error) {
+			console.warn(
+				`LM Studio visual brief failed, falling back to deterministic brief: ${(error as Error).message}`
+			);
+			return fallback;
+		}
+	}
+
+	throw new Error(
+		`Unsupported VISUAL_BRIEF_PROVIDER "${visualBriefProvider}". Use "basic" or "lmstudio".`
+	);
+}
+
+function buildPrompt(brief: VisualBrief): string {
 	return [
 		stylePrompt,
-		`Chapter title: "${title}".`,
-		`Short summary: ${summary}.`,
+		`Chapter title: "${brief.title}".`,
+		`Core theme: ${brief.theme}.`,
+		`Scene direction: ${brief.visualScene}.`,
+		`Short summary: ${brief.summary}.`,
+		`Key visual elements: ${brief.keyElements.join(', ')}.`,
+		`Mood: ${brief.mood}.`,
+		'Composition: strong focal subject, cinematic depth, editorial illustration, and a clear indoor or human-scale environment when relevant.',
+		'Do not default to a generic skyline or empty landscape.',
+		`Avoid: ${brief.negativePrompt}.`,
 		'Format: 16:9 wide horizontal banner.',
 	].join(' ');
 }
 
 function createImageProvider(): ImageProvider {
 	switch (imageProviderName) {
+		case 'comfy':
+		case 'comfyui':
+			return new ComfyUiProvider();
 		case 'google':
 		case 'imagen':
 			return new GoogleImagenProvider();
@@ -143,7 +371,7 @@ function createImageProvider(): ImageProvider {
 			return new StabilityAiProvider();
 		default:
 			throw new Error(
-				`Unsupported IMAGE_PROVIDER "${imageProviderName}". Use "google" or "stability".`
+				`Unsupported IMAGE_PROVIDER "${imageProviderName}". Use "comfyui", "google", or "stability".`
 			);
 	}
 }
@@ -176,13 +404,19 @@ async function main(): Promise<void> {
 
 		const markdown = await fs.readFile(sourcePath, 'utf8');
 		const chapter = parseChapter(markdown);
-		const prompt = buildPrompt(chapter);
+		const brief = await createVisualBrief(chapter);
+		const prompt = buildPrompt(brief);
 
 		if (dryRun) {
 			console.log(`plan  ${fileName}`);
-			console.log(`      title: ${chapter.title}`);
-			console.log(`      summary: ${chapter.summary}`);
+			console.log(`      title: ${brief.title}`);
+			console.log(`      summary: ${brief.summary}`);
+			console.log(`      scene: ${brief.visualScene}`);
+			console.log(`      elements: ${brief.keyElements.join(', ')}`);
 			console.log(`      output: ${path.relative(rootDir, outputPath)}`);
+			if (debugPrompt) {
+				console.log(`      prompt: ${prompt}`);
+			}
 			continue;
 		}
 
