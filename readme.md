@@ -41,6 +41,7 @@ Let us imagine, then, that these ideas mature over the next century and become o
 - [Crime and conflict](#crime-and-conflict)
 - [Aging and death](#aging-and-death)
 - [Transition to 2120](#transition-to-2120)
+- [Political system](#political-system)
 - [P.S.](#ps)
 
 <!-- tocstop -->
@@ -414,6 +415,21 @@ So the task of the present is not only invention. It is institution-building. We
 There is also a psychological transition. People raised in scarcity often keep scarcity habits even when conditions improve. We hoard status, distrust strangers and confuse punishment with responsibility. A better civilisation will need different instincts: more patience, more systems thinking and more confidence that another person’s security is not a threat to our own.
 
 That is why I remain optimistic without pretending certainty. The year 2120 will not arrive as a utopia. It will arrive as the accumulated result of millions of design choices, political fights, scientific breakthroughs and moral decisions made by ordinary people. If the future becomes humane, it will be because enough of us decided that convenience alone was not a worthy destination.
+## Political system
+
+The political argument behind this book is not that capitalism simply disappears and communism simply wins. Reality is usually less theatrical than that. I think the world of 2120 would mix elements of both, but under very different material conditions from the ones that shaped the arguments of the nineteenth and twentieth centuries.
+
+Capitalism grew powerful because scarcity rewarded competition. When food, shelter, transport and tools are difficult to produce, societies use prices and profit signals to decide where effort should go. That logic created innovation, but it also created fear, exploitation and absurd inequality. A system that ties survival to market success always ends up disciplining people through insecurity. It can be dynamic, but it is rarely humane.
+
+Communist ideas, at their best, were trying to answer that cruelty. They asked a fair question: if the economy is a collective achievement, why should millions live in humiliation while a minority owns the structure of life? But communist governments in practice often became rigid, coercive and suspicious of dissent. They promised equality and produced bureaucracy. They reduced some forms of exploitation while creating new forms of domination.
+
+In the world imagined here, both systems are altered by abundance. If energy is cheap, robots do much of the repetitive work and a universal basic income or universal basic services guarantee the essentials of life, then the brutal edge of capitalism becomes less necessary. Markets can remain useful for non-essential goods, experimentation, taste, entrepreneurship and prestige competition. But healthcare, housing floors, education, nutrition, transport access and core infrastructure begin to look less like market products and more like shared guarantees. In that sense, government becomes more communist in its obligations even while society remains partly capitalist in its variety.
+
+This hybrid would not mean everybody earns the same or lives the same. People would still build companies, create luxury goods, invent tools, compete for attention and accumulate reputation. But the stakes would change. Competition would happen mostly above the line of dignity, not below it. You could fail in business without losing the right to live decently. You could choose teaching, caregiving, art or research without becoming economically disposable.
+
+That also changes what government is for. Its role is less about protecting concentrated wealth at all costs and more about maintaining the floor beneath everyone: access to energy, food systems, housing rights, health systems, ecological limits and fair digital infrastructure. A strong public sector would still be needed, but not one that tries to centrally script every human activity. The state should guarantee the essentials and regulate the dangerous concentrations of power, while leaving room for initiative, local culture and voluntary ambition.
+
+So if someone in 2120 asked whether the system is capitalist or communist, the honest answer might be: neither in the old sense, and both in fragments. It would keep capitalism's capacity for experimentation and communism's insistence that basic needs should not depend on private luck. Once survival is no longer the main battlefield, ideology becomes less about slogans and more about practical design. The real question is not which label survives. The real question is whether the system allows human beings to live without fear and still leaves them free to build something more.
 ## P.S.
 
 I’ve tried to think independently and present my view on the life in the future. But later I realised that many of these ideas are similar or identical to the work of Jaques Fresco. Fresco was born one generation too early. People were not ready for his ideas in 1980es. He was preaching, but nobody would take him seriously.
