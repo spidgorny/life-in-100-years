@@ -1,0 +1,13 @@
+## Housing and property
+
+Housing is one of the places where our current civilisation looks the most irrational. We know how to build, yet millions are priced out of shelter. We have empty apartments, yet homeless people. We treat land not only as a place to live, but as a financial weapon. It is hard to imagine a mature society in 2120 preserving this contradiction for another century.
+
+If construction is increasingly automated and energy is cheap, the physical act of building a good home becomes much less expensive than it is today. The scarce part is no longer concrete, glass or labour hours. The scarce part is access to attractive land, infrastructure and social trust. That means the politics of housing shifts from “can we build enough?” to “who gets to control the locations everybody wants?”
+
+I think private space will absolutely remain. People need doors they can close, quiet they can trust and a place that reflects their taste. But the meaning of property changes. Owning five apartments while others are locked out will look as primitive as owning a private well in the middle of a drought. Some combination of long-term use rights, community land trusts and public ownership of essential land is more likely. You may have secure rights to your home for decades, improve it, personalise it and even exchange it, without treating the planet underneath as a casino chip.
+
+This would also fit with a more mobile world. Not everybody will want one fixed address for life. Some people will live in one city-hub for ten years; others will rotate between climates, projects or family networks. A mature housing system should allow both stability and movement. There could be a guaranteed base residence for every person, plus a much wider layer of short- and medium-term housing that feels more like public infrastructure than speculative real estate.
+
+The design of homes will matter as much as their price. If work, learning and care happen closer to home, then a good dwelling is not only a sleeping box. It needs acoustic privacy, healthy air, flexible rooms, good connectivity and access to common gardens, workshops and child-friendly public space. In the 20th century we often built for cars and investors first, humans second. In 2120 that order should be reversed.
+
+Property will not disappear, but it will lose some of its sacred aura. We already accept that there are limits to what one person can do with a river, a hospital or an airport. Housing should move into the same category: partly personal, partly social, always embedded in the wider system that makes a home possible at all.

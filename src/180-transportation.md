@@ -1,0 +1,15 @@
+## Transportation
+
+Transportation changes in 2120 for the same reason work changes: society no longer organizes movement around millions of people making the same trip at the same hour. Once commuting declines, the whole system can be redesigned around convenience, safety and access rather than daily traffic survival.
+
+The most visible change is that driving becomes rare. Autonomous vehicles are ordinary, and most of them are not privately owned. Instead of every household storing an expensive machine that sits idle most of the day, city-hubs rely on shared fleets that arrive when needed, route efficiently and coordinate with public transit. Private cars survive in some rural areas, for enthusiasts, and for special uses, but they no longer define the shape of streets.
+
+That frees an astonishing amount of space. Parking lots shrink. Roads narrow where high speed is no longer necessary. Deliveries happen in quieter, better-timed windows. Streets that once felt like mechanical rivers become mixed public space again: trees, bike lanes, walking routes, play areas, loading zones, and small autonomous shuttles moving at predictable speeds. The city feels less like an obstacle course and more like a habitat.
+
+Mira barely thinks about transport on an ordinary day, which is precisely the point. She cycles to the market in ten minutes, calls a shared vehicle when rain makes that unpleasant, and books a longer autonomous ride when visiting relatives in another district. Her child can travel independently much earlier than children in car-dominated cities today because the streets are calmer and the transport system is legible. Mobility becomes less stressful because it becomes less dramatic.
+
+Public transit does not disappear in this future; it becomes more useful. High-capacity trains and trams are still the most sensible way to move many people through dense corridors. Automation mainly makes them cleaner, more frequent and easier to coordinate with everything else. Freight also improves. Goods move in synchronized networks that waste less energy and less curb space, which matters in a world where local food, medical supplies and manufactured items arrive continuously rather than through giant weekly shopping trips.
+
+The tension is resilience and control. When movement depends on software, networks and shared systems, breakdowns can affect many people at once. A transport system that knows where everyone is going can also become a surveillance system if laws and governance are weak. And some people will resist the loss of manual control, seeing human driving as freedom rather than risk. Those objections are not trivial. The future only feels better if automated transport is accountable, hack-resistant and easy to override when necessary.
+
+So transportation in 2120 is not only about smarter vehicles. It is about requiring fewer pointless trips, making necessary trips gentler, and returning public space to human use. We may still keep the equivalent of horse stables for hobby driving and nostalgia. But the ordinary transport system will feel less like a contest for road space and more like an invisible public service.
