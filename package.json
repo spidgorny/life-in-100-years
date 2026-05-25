@@ -9,7 +9,7 @@
   "scripts": {
     "install:global": "npm install -g marked",
     "make:readme": "(cat src/*.md > readme.md) && yarn markdown-toc -i readme.md",
-    "make:html": "(cat template/before.html && (cat src/*.md | marked | fold -s) && cat template/after.html) > index.html",
+    "make:html": "tsx scripts/build-html.ts",
     "generate:images": "tsx scripts/generate-chapter-images.ts",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
