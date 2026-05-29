@@ -1,12 +1,12 @@
-# Life in hundred years
+# Life in a Hundred Years
 
 We live in difficult times. I am writing this in 2021, in the middle of the COVID-19 pandemic. In moments like this, looking a hundred years ahead is not escapism. It is a way to recover perspective, courage and direction. The future is not something that simply arrives. It is something people build, choice by choice, starting now.
 
 Everything humans create is imagined before it is made. A bridge exists in the architect’s mind before it stands over the river. A factory is planned before it bakes a single loaf of bread. A book is written in thought before it reaches the page. Our images of the future matter because they quietly shape what we consider possible, desirable and worth working toward.
 
-This book starts from a simple premise: if energy becomes abundant and clean, and if automation takes over most necessary production, then survival no longer has to dominate everyday life. Food can be grown with far less human labor. Homes can be built faster and cheaper. Transport, healthcare and basic services can become reliable enough that a decent life is not permanently tied to a job. When survival is gradually decoupled from labor, society reorganizes around different questions.
+This book starts from a simple premise: if energy becomes abundant and clean, and if automation takes over most necessary production, then survival no longer has to dominate everyday life. Food can be grown with far less human labour. Homes can be built faster and cheaper. Transport, healthcare and basic services can become reliable enough that a decent life is not permanently tied to a job. When survival is gradually decoupled from labour, society reorganises around different questions.
 
-Then the center of life shifts. Instead of asking, “How do I earn enough to stay safe?” more people can ask, “How do I grow? How do I contribute? What kind of relationships do I want? What kind of life is meaningful?” That is the governing assumption behind the chapters that follow. This manuscript imagines a world where scarcity loses its grip, and human development, curiosity and connection move closer to the center.
+Then the centre of life shifts. Instead of asking, “How do I earn enough to stay safe?” more people can ask, “How do I grow? How do I contribute? What kind of relationships do I want? What kind of life is meaningful?” That is the governing assumption behind the chapters that follow. This manuscript imagines a world where scarcity loses its grip, and human development, curiosity and connection move closer to the centre.
 
 So this is partly predictive and partly normative. Some pages extrapolate trends that are already visible: cheaper energy, smarter machines, automation, remote work, new forms of education and production. Other pages describe the future we should want to build because it is more humane, less fearful and less wasteful. I am not trying to produce a cold academic forecast. I am trying to sketch a believable and hopeful direction.
 
@@ -41,6 +41,8 @@ Let us imagine, then, that these ideas mature over the next century and become o
 - [Crime and conflict](#crime-and-conflict)
 - [Aging and death](#aging-and-death)
 - [Transition to 2120](#transition-to-2120)
+- [Political system](#political-system)
+- [Mira’s Tuesday](#miras-tuesday)
 - [P.S.](#ps)
 
 <!-- tocstop -->
@@ -111,21 +113,26 @@ Would this reduce competition and produce stagnation? Perhaps some forms of comp
 That is where this chapter connects to automation, education and meaning. When machines do more necessary work, humans are pushed toward different forms of value: care, judgment, invention, culture, mentorship and local problem-solving. Money matters less as a permission slip to exist and more as one coordination tool among many in a richer social world.
 ## Education
 
-Everybody knows that the education was invented by factory owners who needed trained workers. Our education 100 years later still bears the same design principles. Everybody is learning the same subjects, in the same pace regardless of their abilities and natural talents. The study time is split into equal classes 45 minutes long. Any differences in children are neglected or treated as deviation that needs punishment. It more seems like the education for robots than people.
+Mass education was shaped by industrial societies that needed large groups of children to move through the same system at the same time. That model expanded literacy and opportunity, but it also normalised standardisation. Students are still often expected to learn the same subjects at the same pace, in classes too large for real attention to their differences in temperament, ability and interest.
 
-I hope it would change in 2120. First of all, we need smaller classes. One teacher is unable to attend to needs and differences of 30 pupils at the same time as teaching them a lesson. A perfect class size should be determined experimentally, I would recommend to start with 10 pupils. A teacher should become a mentor. Teaching the exact scientific material should be only 1/3 of the duties. The rest should be a development supervision, knowledge nourishment and psychological development.
+By 2120 I hope education looks less like batch processing and more like guided development. Smaller learning groups would let adults notice who a child actually is rather than who the timetable requires them to be. A teacher becomes partly an instructor and partly a mentor: someone who helps build judgement, confidence, curiosity, emotional stability and the habits of self-education, not just exam performance.
 
-No wonder our schools produce mediocre people in droves. Thin about it - every child has a potential to become great. But only if this potential is recognised and cherished. Current schools do nothing of the kind. It’s a shame we deprive our society of the best people.
+Some shared foundations would still matter: language, science, history, ethics, cooperation and practical skills. But the route through them could vary far more from child to child. A humane society should not treat difference as a defect or assume that every young person is being prepared for the same adult role.
+
+Every child arrives with unrealised strengths. Education at its best recognises them early, nourishes them patiently and gives them room to grow. The purpose is not to manufacture obedient workers. It is to help people discover what they can become and then equip them to move in that direction.
 
 > "In a saner world, there would not be merely one or two Einsteins; there would be thousands and, eventually, millions."
 >
 > — Jacque Fresco
 ## Automation
 
-One more reason for not treating our children as future factory workers is this. All work that can be done by robots will be done by robots. This is logical - even most expensive robots are cheaper in the long term than humans with their needs for variety, novelty, food, meaning in life, labor unions, maximal working hours and minimal salary. We are living in the transition zone from human work to machine work. This transition looks scary for 3 million truck drivers in the U.S. But it’s inevitable, just like we don’t grow each our own food (farmers do it more efficiently), we don’t build our own house (building company is way more efficient and experienced). The same way we will not do jobs that can be done by machine or AI. It’s just counter-productive.
+Another reason not to treat children as future factory workers is that much factory work, and a great deal of routine office work, will increasingly be done by machines. This is not because people are defective and robots are superior. It is because repetitive systems are often cheaper, faster and more consistent when they are automated, especially once energy and hardware become more abundant.
 
-So we don’t need to train our children as workers. We should develop their higher qualities: fascination with life, desire to help others, life-long self-education, creativity, problem-solving, entrepreneurship, healthy diet, natural talents.
+In the twenty-first century that transition already feels threatening to drivers, clerks, warehouse staff and many others whose income depends on tasks that software or machines can imitate. That fear is real. But the long-term direction is still clear. Just as most of us no longer grow our own food or build our own homes, we will gradually stop spending human lives on jobs that machines can do more efficiently.
 
+So we should not educate children as if their destiny were to compete with software on software's terms. We should develop the qualities automation does not replace well: judgement, care, cooperation, creativity, curiosity, ethical reasoning, craftsmanship, entrepreneurship and the ability to keep learning.
+
+The purpose of a mature society is not to keep inventing repetitive tasks for humans merely to justify wages. It is to let machines carry more of the drudgery so people can do more of what only people can do.
 ## Work from home
 
 For most of the industrial era, work was a place you had to travel to. Offices, factories and campuses concentrated tools, records and authority in one physical location, and workers organized their lives around that fact. The daily commute became so normal that whole cities were built to serve it, even though it consumed enormous time, energy and attention.
@@ -207,11 +214,11 @@ There is also a cultural tension here. When people move easily, some communities
 In that sense, countries become lighter and more administrative, while belonging becomes more chosen and more local. People may still feel deep affection for a region, a language, a landscape or a history. But nationality stops being the main gatekeeper of dignity. It becomes one layer of identity among many, instead of a wall around opportunity.
 ## Languages
 
-English has already established itself as am international language of science, internet and technology. I think by 2120 there will be almost nobody who does not speak English. Local languages will remain as well, but they will be spoken among family members and friends from your city. We will have mostly friends from around the world - English is the just the only language everybody understands.
+English has already become the closest thing the modern world has to a shared second language in science, software, aviation, research and much of international culture. By 2120 I expect that trend to deepen, even as translation tools improve. Many more people will probably speak workable English simply because global cooperation makes it useful.
 
-That means that almost all people will be bilingual. This becomes the norm, more languages - more opportunities.
+That does not mean local languages disappear or shrink into private life. Language carries memory, humour, identity and the texture of place. A healthy future is more likely to be bilingual or multilingual: people use one or two wider bridge languages for international life, while local languages remain alive in family, literature, regional culture and everyday belonging.
 
-Chinese and Spanish have larger amount of speaker than English at the moment, but I’m sure English proficiency will grow.  They can’t beat the simplicity of English and the vast amount of scientific literature that is written in English.
+Chinese, Spanish, Arabic, Hindi and other major languages will remain powerful, and machine translation may reduce the advantage of any single one. But even in that world, some shared linguistic medium will still matter. Whether it remains English or broadens into a more mixed system, the real gain is not linguistic victory. It is easier understanding between people who would otherwise remain strangers.
 ## Laws
 
 Technology tends to ignore jurisdictional boundaries long before governments do. Data crosses continents instantly. Autonomous vehicles move through several legal systems in a day. Medical platforms, payment systems and learning networks serve users in many places at once. In such a world, purely local law becomes too weak for some problems and too clumsy for others.
@@ -240,8 +247,11 @@ Digital systems would make this easier, but only if they are designed with suspi
 I do not imagine a perfect society where everybody agrees. I imagine one where disagreement is cheaper and less dangerous. When survival is not at stake, politics can become less tribal. People may still argue fiercely about privacy, public aesthetics, child development or the rights of synthetic minds. That is healthy. The sign of progress is not the end of politics. It is the replacement of panic, propaganda and domination with institutions that are calm enough to learn.
 ## Surveillance
 
-It’s bad news for freedom fighters. You could be on your own in the past if you travel long enough and there would be no supervision. There’s a tendency to impose police, laws and government everywhere. In 2120 you would be under supervision at all times. Your smart home needs to know when you are coming back, your smart kitchen needs to sense when you become hungry, the self-driving car will report all your movements to the server and your AI doctor needs to recommend you a new supplement when it senses your blood composition change. If we want the world to be convenient - we need to provide it with information about us. There’s no way around it.
+Convenience will keep pulling society toward surveillance. Smart homes, self-driving vehicles, health monitors and public infrastructure all work better when systems can sense what is happening in real time. A city that can detect traffic, contamination, fire risk or a medical emergency early is safer and more efficient than one that is blind.
 
+But that convenience comes with danger. If every movement, purchase, conversation and heartbeat becomes legible to governments or corporations, people may gain comfort while losing privacy, dissent and spontaneity. A society that knows everything about its residents can become orderly in the same way a prison is orderly. That is not maturity. It is overreach.
+
+So the real question in 2120 is not whether sensing systems exist, but who controls them and under what limits. Data collection should be proportionate, auditable and revocable. People should know what is being tracked, why it is needed, how long it is stored and how to opt out where the stakes allow it. A humane future will use sensors for safety and care without turning permanent observation into the price of being alive.
 ## Housing and property
 
 Housing is one of the places where our current civilisation looks the most irrational. We know how to build, yet millions are priced out of shelter. We have empty apartments, yet homeless people. We treat land not only as a place to live, but as a financial weapon. It is hard to imagine a mature society in 2120 preserving this contradiction for another century.
@@ -328,14 +338,13 @@ Longer healthy lifespans will also rearrange generations. Imagine great-grandpar
 The best sign of progress would be simple: children are not rushed into adulthood, and adults are not crushed by the task of loving them. Family becomes less about economic dependency and more about chosen responsibility.
 ## Human relations
 
-Good relations between people become the norm in 2120. Nobody’s stressed about their boss or lack of funds, lack of health or opportunities. People try to use each other nowadays. Polite relations are often dictated by the need to gain advantage.
+As material insecurity declines, human relations should have a chance to become less defensive. Much present-day politeness is mixed with calculation: pleasing a boss, protecting status, asking for favours or avoiding social and financial risk. When survival depends less on hierarchy, people can meet each other with more honesty and less hidden panic.
 
-All of that will be long gone. People will meet other people with a genuine curiosity and ask “how are you” because they care, not as another phrase for “hello”.
+That will not make everyone kind by magic. Envy, vanity, insecurity and manipulation do not disappear just because a society gets richer. But the background pressure eases. If people are less exhausted, less humiliated and less frightened of falling, they have more room for patience, curiosity and genuine attention.
 
-Exploring human potential becomes the goal of the people. They are not born to work, but to explore the planet and life. People will still have natural interests in different topics and will explore different ways of life. The rule “born a carpenter - will die a carpenter” will no longer apply.
+The deeper shift is in purpose. Human beings are not born only to occupy a slot in the labour market. In a healthier civilisation, more people can organise their lives around learning, making, caring, exploring and contributing. Relationships become less transactional because identity is less tied to competition for survival.
 
-Some people will be naturally tended to guide newcomers into the topic (science discipline or place of interest). They will replace the teachers and professors. 
-
+That also changes mentorship. Some people will naturally guide others into a craft, discipline or way of life, not as authorities who rank and sort everyone, but as experienced companions who open doors. In that sense, the future may have fewer gatekeepers and more generous guides.
 ## Media and attention
 
 The scarcest resource in 2120 may not be energy, land or computing power. It may be unbroken attention. We already live in a world where millions of people and machines compete every second to enter our minds. If content generation becomes nearly free, this competition will intensify beyond anything we currently call distraction.
@@ -414,8 +423,48 @@ So the task of the present is not only invention. It is institution-building. We
 There is also a psychological transition. People raised in scarcity often keep scarcity habits even when conditions improve. We hoard status, distrust strangers and confuse punishment with responsibility. A better civilisation will need different instincts: more patience, more systems thinking and more confidence that another person’s security is not a threat to our own.
 
 That is why I remain optimistic without pretending certainty. The year 2120 will not arrive as a utopia. It will arrive as the accumulated result of millions of design choices, political fights, scientific breakthroughs and moral decisions made by ordinary people. If the future becomes humane, it will be because enough of us decided that convenience alone was not a worthy destination.
+## Political system
+
+The political argument behind this book is not that capitalism simply disappears and communism simply wins. Reality is usually less theatrical than that. I think the world of 2120 would mix elements of both, but under very different material conditions from the ones that shaped the arguments of the nineteenth and twentieth centuries.
+
+Capitalism grew powerful because scarcity rewarded competition. When food, shelter, transport and tools are difficult to produce, societies use prices and profit signals to decide where effort should go. That logic created innovation, but it also created fear, exploitation and absurd inequality. A system that ties survival to market success always ends up disciplining people through insecurity. It can be dynamic, but it is rarely humane.
+
+Communist ideas, at their best, were trying to answer that cruelty. They asked a fair question: if the economy is a collective achievement, why should millions live in humiliation while a minority owns the structure of life? But communist governments in practice often became rigid, coercive and suspicious of dissent. They promised equality and produced bureaucracy. They reduced some forms of exploitation while creating new forms of domination.
+
+In the world imagined here, both systems are altered by abundance. If energy is cheap, robots do much of the repetitive work and a universal basic income or universal basic services guarantee the essentials of life, then the brutal edge of capitalism becomes less necessary. Markets can remain useful for non-essential goods, experimentation, taste, entrepreneurship and prestige competition. But healthcare, housing floors, education, nutrition, transport access and core infrastructure begin to look less like market products and more like shared guarantees. In that sense, government becomes more communist in its obligations even while society remains partly capitalist in its variety.
+
+This hybrid would not mean everybody earns the same or lives the same. People would still build companies, create luxury goods, invent tools, compete for attention and accumulate reputation. But the stakes would change. Competition would happen mostly above the line of dignity, not below it. You could fail in business without losing the right to live decently. You could choose teaching, caregiving, art or research without becoming economically disposable.
+
+That also changes what government is for. Its role is less about protecting concentrated wealth at all costs and more about maintaining the floor beneath everyone: access to energy, food systems, housing rights, health systems, ecological limits and fair digital infrastructure. A strong public sector would still be needed, but not one that tries to centrally script every human activity. The state should guarantee the essentials and regulate the dangerous concentrations of power, while leaving room for initiative, local culture and voluntary ambition.
+
+So if someone in 2120 asked whether the system is capitalist or communist, the honest answer might be: neither in the old sense, and both in fragments. It would keep capitalism's capacity for experimentation and communism's insistence that basic needs should not depend on private luck. Once survival is no longer the main battlefield, ideology becomes less about slogans and more about practical design. The real question is not which label survives. The real question is whether the system allows human beings to live without fear and still leaves them free to build something more.
+## Mira’s Tuesday
+
+The promise of this book can be tested in one ordinary day. If the systems of 2120 are working, Mira should not need to be exceptional, lucky or wealthy to feel that civilisation is on her side.
+
+She wakes a little before the rest of the family because the bedroom has already brightened with programmed morning light. The apartment is quiet, warm and secure. Nobody can take it from her because a contract ended, a client disappeared or an illness interrupted paid work. Housing is no longer a cliff edge hidden inside everyday life. It is steady ground. Before she even leaves bed, that fact has already shaped her mood. She begins the day without the old fear of bills, rent or sudden downward motion.
+
+Breakfast is simple: fruit, fresh bread, cultured protein, coffee. Good food is ordinary enough that she does not experience it as luxury. Her child leaves for the learning centre by bicycle with two friends. Mira watches from the balcony only long enough to wave. The streets are calm, the routes are legible and the adults they pass are part of a public world that has been designed for trust rather than speed. Safety is not the feeling of being guarded by force. It is the quieter feeling that other people, and the systems around them, are mostly trying to keep one another intact.
+
+Before starting her morning work, she gives half an hour to herself. Her health system notes that her sleep was slightly shallow and suggests stretching, daylight and a longer walk later. The advice does not arrive as scolding or salesmanship. It feels like living in a society that would rather prevent harm than monetise it. While tea cools beside her, she joins a short seminar from another city-hub on wetland restoration methods. She is not collecting credentials out of panic. She is learning because learning has become a normal part of adult life again.
+
+Then she begins her main contribution for the day. Three mornings a week she works with a regional materials network that matches reclaimed building components with neighbourhood projects. Much of the sorting is automated, but the work still needs human judgment: which school should receive surplus acoustic panels first, which housing block can be repaired instead of rebuilt, which local team needs mediation because two good uses are competing for the same stock. She does not do this because survival depends on making herself employable every hour. She does it because it is useful, because she is good at it and because usefulness still matters even when desperation recedes.
+
+At midday she cycles to a nearby care residence where an older neighbour is recovering after surgery. They eat lunch in the garden: soup, tomatoes, warm flatbread, fruit. Mira helps her review a mobility plan and stays long enough to hear a story she has heard twice before but likes anyway. Care is easier to give in a world that is not always running late. The afternoon does not have to be defended against the evening with military precision.
+
+On her way back she stops at the local learning centre, where she spends an hour with two children building a model flood barrier for a community design project. One of the children is fascinated by the sensors, the other mostly wants to test what happens when the wall fails. Both impulses are useful. Mira likes this part of the week because it reminds her that a healthy society is not only maintained; it is also handed forward.
+
+Later she walks through the green corridor that links her district to the civic workshops. The walk is partly exercise, partly mental reset. She passes repair crews, gardeners, delivery bots and people sitting in the sun with no visible urgency. That calm does not make her think humanity has become perfect. It makes her think humanity has finally built enough good structure that ordinary decency has room to breathe.
+
+At the workshop she picks up a small ceramic glazing kit she reserved from the library of things the night before. In another century she might have bought one, stored it badly and used it twice. Now the tools circulate and remain in good condition because access matters more than private accumulation. She has still not used money once all day. She has not tapped a card, checked a balance, compared prices or felt that familiar little wound of asking whether she is allowed to participate.
+
+In the evening she meets friends in a shared studio and works on a set of bowls she has been shaping over the past month. Someone plays music. Her partner arrives with their child after a neighbourhood meal. They talk, laugh, glaze, clean up and cycle home under street lighting that makes the roads feel public rather than threatening. Joy does not need to justify itself by becoming content, income or achievement. It is enough that the evening is alive and shared.
+
+When Mira goes to sleep, she is pleasantly tired. She has learned something, cared for herself, cared for another person, contributed to useful work, helped a child, made something with her hands and spent time with people she loves. The whole day has rested on systems that let her trust tomorrow: secure housing, reliable food, preventive health, safe streets, open learning, shared tools and a social floor beneath everyone. From waking to sleep, she has not needed money once. That is not because value has disappeared. It is because civilisation has become good enough that much of what matters most is accessed as a birthright, a public service or a shared commons rather than as a private emergency.
 ## P.S.
 
-I’ve tried to think independently and present my view on the life in the future. But later I realised that many of these ideas are similar or identical to the work of Jaques Fresco. Fresco was born one generation too early. People were not ready for his ideas in 1980es. He was preaching, but nobody would take him seriously.
+I have tried to think independently about life in the future, but many of these themes overlap with ideas explored earlier by Jacque Fresco and others who imagined post-scarcity societies. Reading Fresco after drafting this manuscript was reassuring rather than disappointing. It suggested that some of these intuitions are shared.
 
-Even though my ideas are not new - so what? It’s even better that good ideas are repeated, they give a sense of a direction for the development. Anyway, not many people are aware of the ideas of Jaques Fresco as well as with ideas of Elon Musk. I think they are worth repeating.
+Fresco was often dismissed because his proposals sounded too early, too large or too far outside the habits of his time. That does not mean the questions were wrong. How should technology serve human beings? What happens when design matters more than ideology? How do we organise society when scarcity is no longer the centre of everything? Those are still worth asking.
+
+So even where these ideas are not new, I do not mind repeating them. Good ideas become more useful when more people can see the direction they point toward.

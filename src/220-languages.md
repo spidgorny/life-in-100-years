@@ -1,7 +1,7 @@
 ## Languages
 
-English has already established itself as am international language of science, internet and technology. I think by 2120 there will be almost nobody who does not speak English. Local languages will remain as well, but they will be spoken among family members and friends from your city. We will have mostly friends from around the world - English is the just the only language everybody understands.
+English has already become the closest thing the modern world has to a shared second language in science, software, aviation, research and much of international culture. By 2120 I expect that trend to deepen, even as translation tools improve. Many more people will probably speak workable English simply because global cooperation makes it useful.
 
-That means that almost all people will be bilingual. This becomes the norm, more languages - more opportunities.
+That does not mean local languages disappear or shrink into private life. Language carries memory, humour, identity and the texture of place. A healthy future is more likely to be bilingual or multilingual: people use one or two wider bridge languages for international life, while local languages remain alive in family, literature, regional culture and everyday belonging.
 
-Chinese and Spanish have larger amount of speaker than English at the moment, but I’m sure English proficiency will grow.  They can’t beat the simplicity of English and the vast amount of scientific literature that is written in English.
+Chinese, Spanish, Arabic, Hindi and other major languages will remain powerful, and machine translation may reduce the advantage of any single one. But even in that world, some shared linguistic medium will still matter. Whether it remains English or broadens into a more mixed system, the real gain is not linguistic victory. It is easier understanding between people who would otherwise remain strangers.
