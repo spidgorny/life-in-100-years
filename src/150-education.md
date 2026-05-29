@@ -1,10 +1,12 @@
 ## Education
 
-Everybody knows that the education was invented by factory owners who needed trained workers. Our education 100 years later still bears the same design principles. Everybody is learning the same subjects, in the same pace regardless of their abilities and natural talents. The study time is split into equal classes 45 minutes long. Any differences in children are neglected or treated as deviation that needs punishment. It more seems like the education for robots than people.
+Mass education was shaped by industrial societies that needed large groups of children to move through the same system at the same time. That model expanded literacy and opportunity, but it also normalised standardisation. Students are still often expected to learn the same subjects at the same pace, in classes too large for real attention to their differences in temperament, ability and interest.
 
-I hope it would change in 2120. First of all, we need smaller classes. One teacher is unable to attend to needs and differences of 30 pupils at the same time as teaching them a lesson. A perfect class size should be determined experimentally, I would recommend to start with 10 pupils. A teacher should become a mentor. Teaching the exact scientific material should be only 1/3 of the duties. The rest should be a development supervision, knowledge nourishment and psychological development.
+By 2120 I hope education looks less like batch processing and more like guided development. Smaller learning groups would let adults notice who a child actually is rather than who the timetable requires them to be. A teacher becomes partly an instructor and partly a mentor: someone who helps build judgement, confidence, curiosity, emotional stability and the habits of self-education, not just exam performance.
 
-No wonder our schools produce mediocre people in droves. Thin about it - every child has a potential to become great. But only if this potential is recognised and cherished. Current schools do nothing of the kind. It’s a shame we deprive our society of the best people.
+Some shared foundations would still matter: language, science, history, ethics, cooperation and practical skills. But the route through them could vary far more from child to child. A humane society should not treat difference as a defect or assume that every young person is being prepared for the same adult role.
+
+Every child arrives with unrealised strengths. Education at its best recognises them early, nourishes them patiently and gives them room to grow. The purpose is not to manufacture obedient workers. It is to help people discover what they can become and then equip them to move in that direction.
 
 > "In a saner world, there would not be merely one or two Einsteins; there would be thousands and, eventually, millions."
 >

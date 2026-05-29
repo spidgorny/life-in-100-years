@@ -1,10 +1,9 @@
 ## Human relations
 
-Good relations between people become the norm in 2120. Nobody’s stressed about their boss or lack of funds, lack of health or opportunities. People try to use each other nowadays. Polite relations are often dictated by the need to gain advantage.
+As material insecurity declines, human relations should have a chance to become less defensive. Much present-day politeness is mixed with calculation: pleasing a boss, protecting status, asking for favours or avoiding social and financial risk. When survival depends less on hierarchy, people can meet each other with more honesty and less hidden panic.
 
-All of that will be long gone. People will meet other people with a genuine curiosity and ask “how are you” because they care, not as another phrase for “hello”.
+That will not make everyone kind by magic. Envy, vanity, insecurity and manipulation do not disappear just because a society gets richer. But the background pressure eases. If people are less exhausted, less humiliated and less frightened of falling, they have more room for patience, curiosity and genuine attention.
 
-Exploring human potential becomes the goal of the people. They are not born to work, but to explore the planet and life. People will still have natural interests in different topics and will explore different ways of life. The rule “born a carpenter - will die a carpenter” will no longer apply.
+The deeper shift is in purpose. Human beings are not born only to occupy a slot in the labour market. In a healthier civilisation, more people can organise their lives around learning, making, caring, exploring and contributing. Relationships become less transactional because identity is less tied to competition for survival.
 
-Some people will be naturally tended to guide newcomers into the topic (science discipline or place of interest). They will replace the teachers and professors. 
-
+That also changes mentorship. Some people will naturally guide others into a craft, discipline or way of life, not as authorities who rank and sort everyone, but as experienced companions who open doors. In that sense, the future may have fewer gatekeepers and more generous guides.
