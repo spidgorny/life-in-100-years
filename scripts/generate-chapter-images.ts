@@ -16,6 +16,11 @@ const srcDir = path.join(rootDir, 'src');
 const defaultOutputDir = path.join(rootDir, 'images', 'chapters');
 const imageProviderName = (process.env.IMAGE_PROVIDER || 'comfyui').toLowerCase();
 const visualBriefProvider = (process.env.VISUAL_BRIEF_PROVIDER || 'basic').toLowerCase();
+const defaultComfyChapterWidth = 1024;
+const defaultComfyChapterHeight = 576;
+const defaultComfyChapterSteps = 12;
+const defaultComfyChapterCfg = 5.5;
+const defaultComfyChapterTimeoutMs = 900000;
 
 const stylePrompt = [
 	'Create a cinematic wide chapter banner for a nonfiction futurist book.',
@@ -358,11 +363,39 @@ function buildPrompt(brief: VisualBrief): string {
 	].join(' ');
 }
 
+function parseIntegerEnv(name: string, fallback: number): number {
+	const raw = process.env[name];
+
+	if (!raw) {
+		return fallback;
+	}
+
+	const parsed = Number.parseInt(raw, 10);
+	return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+function parseFloatEnv(name: string, fallback: number): number {
+	const raw = process.env[name];
+
+	if (!raw) {
+		return fallback;
+	}
+
+	const parsed = Number.parseFloat(raw);
+	return Number.isFinite(parsed) ? parsed : fallback;
+}
+
 function createImageProvider(): ImageProvider {
 	switch (imageProviderName) {
 		case 'comfy':
 		case 'comfyui':
-			return new ComfyUiProvider();
+			return new ComfyUiProvider({
+				width: parseIntegerEnv('COMFYUI_WIDTH', defaultComfyChapterWidth),
+				height: parseIntegerEnv('COMFYUI_HEIGHT', defaultComfyChapterHeight),
+				steps: parseIntegerEnv('COMFYUI_STEPS', defaultComfyChapterSteps),
+				cfg: parseFloatEnv('COMFYUI_CFG', defaultComfyChapterCfg),
+				timeoutMs: parseIntegerEnv('COMFYUI_TIMEOUT_MS', defaultComfyChapterTimeoutMs),
+			});
 		case 'google':
 		case 'imagen':
 			return new GoogleImagenProvider();

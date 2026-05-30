@@ -2,3 +2,4 @@ combined.html
 .idea/
 node_modules/
 .env
+yarn-error.log

@@ -11,6 +11,7 @@
     "make:readme": "(cat src/*.md > readme.md) && yarn markdown-toc -i readme.md",
     "make:html": "tsx scripts/build-html.ts",
     "generate:images": "tsx scripts/generate-chapter-images.ts",
+    "test:comfyui": "tsx scripts/test-comfyui.ts",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
     "dev": "serve"
